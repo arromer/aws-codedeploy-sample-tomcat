@@ -47,9 +47,9 @@
   </nav>
   <% if (!((String) request.getAttribute("deploymentGroupName")).contains("Production")) { %>
     <div class="alert alert-info" role="alert">
-      <p><strong>AWS CodeDeploy Application:</strong> ${applicationName}</p>
-      <p><strong>AWS CodeDeploy Deployment Group:</strong> ${deploymentGroupName}</p>
-      <strong>Amazon EC2 Instances associated with this fleet:</strong>
+      <p><strong>test 1: AWS CodeDeploy Application:</strong> ${applicationName}</p>
+      <p><strong>test 1: AWS CodeDeploy Deployment Group:</strong> ${deploymentGroupName}</p>
+      <strong>test 1: Amazon EC2 Instances associated with this fleet:</strong>
       <ul>
         <% for (final String instance : (List<String>) request.getAttribute("instanceIds")) { %>
           <% if (((Map<String, String>) request.getAttribute("instanceStates")).containsKey(instance)) { %>
